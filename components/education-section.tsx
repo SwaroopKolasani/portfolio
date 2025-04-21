@@ -4,6 +4,7 @@ import { AnimatedSection } from "./animated-section"
 import { Card, CardContent } from "@/components/ui/card"
 import { GraduationCapIcon, CalendarIcon, MapPinIcon, BookOpenIcon } from "lucide-react"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 export function EducationSection() {
   return (
@@ -13,9 +14,37 @@ export function EducationSection() {
           <h2 className="section-heading text-center">Education</h2>
         </AnimatedSection>
 
-        <div className="mt-12 space-y-8">
-          <AnimatedSection delay={0.2}>
-            <motion.div whileHover={{ y: -5 }} transition={{ duration: 0.3 }}>
+        <div className="mt-12 space-y-16">
+          <div className="flex flex-col lg:flex-row gap-8 items-center">
+            <motion.div
+              className="lg:w-1/2"
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              viewport={{ once: true }}
+            >
+              <div className="relative h-[250px] w-full overflow-hidden rounded-lg border-2 border-[#8E1616]/50">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CSUDH-campus.jpg-JEfdnn0JMBpN8571KzS4ygwdnakTut.jpeg"
+                  alt="California State University-Dominguez Hills"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 p-4">
+                  <h3 className="text-xl font-bold text-white">California State University-Dominguez Hills</h3>
+                  <p className="text-[#c13030]">Master's in Computer Science</p>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              className="lg:w-1/2"
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+              viewport={{ once: true }}
+            >
               <Card className="overflow-hidden border-l-4 border-l-[#8E1616] bg-black/60 backdrop-blur-sm border border-[#8E1616]/50">
                 <CardContent className="p-6">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
@@ -39,7 +68,7 @@ export function EducationSection() {
                   </div>
 
                   <div className="mt-4">
-                    <p className="text-gray-300 mb-2">GPA: 3.5/4.00</p>
+                    <p className="text-gray-300 mb-2"></p>
 
                     <h4 className="text-lg font-semibold mb-2 text-[#c13030]">Relevant Courses:</h4>
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -60,10 +89,38 @@ export function EducationSection() {
                 </CardContent>
               </Card>
             </motion.div>
-          </AnimatedSection>
+          </div>
 
-          <AnimatedSection delay={0.3}>
-            <motion.div whileHover={{ y: -5 }} transition={{ duration: 0.3 }}>
+          <div className="flex flex-col lg:flex-row-reverse gap-8 items-center">
+            <motion.div
+              className="lg:w-1/2"
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              viewport={{ once: true }}
+            >
+              <div className="relative h-[250px] w-full overflow-hidden rounded-lg border-2 border-[#8E1616]/50">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BapatlaEngineeringcollege.jpg-WRzmEeDEDlsmOVEbb9gxKN3Oybbj4b.jpeg"
+                  alt="Bapatla Engineering College"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 p-4">
+                  <h3 className="text-xl font-bold text-white">Bapatla Engineering College</h3>
+                  <p className="text-[#c13030]">Bachelor of Technology in Computer Science</p>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              className="lg:w-1/2"
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+              viewport={{ once: true }}
+            >
               <Card className="overflow-hidden border-l-4 border-l-[#8E1616] bg-black/60 backdrop-blur-sm border border-[#8E1616]/50">
                 <CardContent className="p-6">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
@@ -107,7 +164,7 @@ export function EducationSection() {
                 </CardContent>
               </Card>
             </motion.div>
-          </AnimatedSection>
+          </div>
         </div>
       </div>
     </section>

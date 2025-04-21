@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { ArrowDownIcon, GithubIcon, LinkedinIcon, MailIcon, TwitterIcon } from "lucide-react"
 import Link from "next/link"
+import { TypewriterEffect } from "./typewriter-effect"
 
 export function HeroSection() {
   return (
@@ -39,17 +40,23 @@ export function HeroSection() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.5 }}
             >
-              Software Engineer & Data Engineer
+              Aspiring ML Engineer & Data Engineer
             </motion.h2>
 
-            <motion.p
-              className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.5 }}
-            >
-              Passionate about building scalable applications and turning complex data into actionable insights.
-            </motion.p>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.5 }}>
+              <TypewriterEffect
+                texts={[
+                  "Passionate about building scalable applications and turning complex data into actionable insights.",
+                  "Dedicated to creating efficient, innovative solutions that solve real-world problems.",
+                  "Committed to continuous learning and staying at the forefront of technology.",
+                  "Transforming complex challenges into elegant, user-friendly solutions.",
+                ]}
+                typingSpeed={50}
+                deletingSpeed={30}
+                delayAfterType={2000}
+                delayAfterDelete={500}
+              />
+            </motion.div>
 
             <motion.div
               className="flex justify-center"

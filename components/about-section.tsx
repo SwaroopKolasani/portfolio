@@ -19,11 +19,11 @@ export function AboutSection() {
           <AnimatedSection direction="left">
             <div className="relative">
               <motion.div
-                className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg blur opacity-25"
+                className="absolute -inset-1 bg-gradient-to-r from-[#8e1616] to-blue-600 rounded-lg blur opacity-25"
                 animate={{ opacity: [0.25, 0.5, 0.25] }}
                 transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
               />
-              <div className="relative bg-black border border-purple-900/50 rounded-lg overflow-hidden">
+              <div className="relative bg-black border border-[#8e1616]/50 rounded-lg overflow-hidden">
                 <Image
                   src="/images/profile.png"
                   alt="Gyanan Swaroop Kolasani"
@@ -37,12 +37,10 @@ export function AboutSection() {
 
           <AnimatedSection direction="right" delay={0.2}>
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-purple-300">Software Engineer & Data Engineer</h3>
+              <h3 className="text-2xl font-bold text-[#8e1616]">Data Engineer</h3>
 
               <p className="text-gray-300">
-                I'm a passionate software and data engineer with expertise in building scalable applications and turning
-                complex data into actionable insights. Currently pursuing my Master's in Computer Science at California
-                State University-Dominguez Hills.
+                I'm a passionate data engineer with expertise in building scalable applications and turning complex data into actionable insights. Currently pursuing my Master's in Computer Science at California State University-Dominguez Hills.
               </p>
 
               <p className="text-gray-300">
@@ -59,7 +57,7 @@ export function AboutSection() {
               </p>
 
               <div className="pt-4">
-                <Button asChild className="bg-brandred hover:bg-brandred">
+                <Button asChild className="bg-[#8e1616] hover:bg-[#7a1313]">
                   <Link href="#" target="_blank" rel="noopener noreferrer">
                     <FileTextIcon className="mr-2 h-4 w-4" />
                     Download Resume

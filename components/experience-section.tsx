@@ -51,12 +51,12 @@ export function ExperienceSection() {
           {experiences.map((exp, index) => (
             <AnimatedSection key={index} delay={index * 0.1}>
               <motion.div whileHover={{ y: -5 }} transition={{ duration: 0.3 }}>
-                <Card className="overflow-hidden border-l-4 border-l-purple-600 bg-black/60 backdrop-blur-sm border border-purple-900/50">
+                <Card className="overflow-hidden border-l-4 border-l-[#8e1616] bg-black/60 backdrop-blur-sm border border-[#8e1616]/50">
                   <CardContent className="p-6">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                       <div>
                         <h3 className="text-xl font-bold text-white">{exp.title}</h3>
-                        <p className="text-purple-300 font-medium">{exp.company}</p>
+                        <p className="text-[#8e1616] font-medium">{exp.company}</p>
                       </div>
                       <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-2 md:mt-0">
                         <div className="flex items-center text-gray-400">
@@ -73,7 +73,7 @@ export function ExperienceSection() {
                     <ul className="space-y-2 mt-4">
                       {exp.description.map((item, i) => (
                         <li key={i} className="flex">
-                          <BriefcaseIcon className="h-5 w-5 mr-2 text-purple-500 flex-shrink-0 mt-1" />
+                          <BriefcaseIcon className="h-5 w-5 mr-2 text-[#8e1616] flex-shrink-0 mt-1" />
                           <span className="text-gray-300">{item}</span>
                         </li>
                       ))}

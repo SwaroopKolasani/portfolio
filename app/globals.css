@@ -33,6 +33,12 @@
   }
   body {
     @apply bg-black text-white;
+    cursor: none;
+  }
+  a,
+  button,
+  [role="button"] {
+    cursor: none;
   }
 }
 
@@ -130,4 +136,18 @@
   border-radius: 50%;
   background: rgba(142, 22, 22, 0.5);
   pointer-events: none;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
 }

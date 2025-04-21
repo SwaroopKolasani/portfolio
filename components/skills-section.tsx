@@ -16,37 +16,36 @@ interface SkillCategory {
 const skillCategories: SkillCategory[] = [
   {
     name: "Programming Languages",
-    icon: <CodeIcon className="h-6 w-6 text-primary" />,
+    icon: <CodeIcon className="h-6 w-6 text-[#8e1616]" />,
     skills: ["C++", "Python", "JavaScript"],
   },
   {
     name: "Web Technologies",
-    icon: <TerminalIcon className="h-6 w-6 text-primary" />,
+    icon: <TerminalIcon className="h-6 w-6 text-[#8e1616]" />,
     skills: ["JavaScript", "Node.js", "React.js"],
   },
   {
     name: "Cloud Technologies",
-    icon: <CloudIcon className="h-6 w-6 text-primary" />,
+    icon: <CloudIcon className="h-6 w-6 text-[#8e1616]" />,
     skills: ["AWS (EC2, S3, Glue, Lambda, Kafka)", "Google Cloud (BigQuery)"],
   },
   {
     name: "Databases",
-    icon: <DatabaseIcon className="h-6 w-6 text-primary" />,
+    icon: <DatabaseIcon className="h-6 w-6 text-[#8e1616]" />,
     skills: ["MongoDB", "MySQL", "PostgreSQL"],
   },
   {
     name: "Development Tools",
-    icon: <ServerIcon className="h-6 w-6 text-primary" />,
+    icon: <ServerIcon className="h-6 w-6 text-[#8e1616]" />,
     skills: ["Git & GitHub", "VS Code", "Google Colab", "Docker", "TensorFlow"],
   },
   {
     name: "Certifications",
-    icon: <CertificateIcon className="h-6 w-6 text-primary" />,
+    icon: <CertificateIcon className="h-6 w-6 text-[#8e1616]" />,
     skills: ["AWS Associate Solution Architect", "AWS Associate Machine Learning Engineer", "Microsoft Power-BI"],
   },
 ]
 
-// Update the styling for the dark theme
 export function SkillsSection() {
   return (
     <section id="skills" className="section bg-black">
@@ -59,10 +58,10 @@ export function SkillsSection() {
           {skillCategories.map((category, index) => (
             <AnimatedSection key={index} delay={index * 0.1}>
               <motion.div whileHover={{ y: -5 }} transition={{ duration: 0.3 }}>
-                <Card className="h-full border-t-4 border-t-purple-600 bg-black/60 backdrop-blur-sm border border-purple-900/50">
+                <Card className="h-full border-t-4 border-t-[#8e1616] bg-black/60 backdrop-blur-sm border border-[#8e1616]/50">
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
-                      <div className="text-purple-500">{category.icon}</div>
+                      <div className="text-[#8e1616]">{category.icon}</div>
                       <h3 className="text-xl font-bold ml-2 text-white">{category.name}</h3>
                     </div>
 
@@ -70,7 +69,7 @@ export function SkillsSection() {
                       {category.skills.map((skill, i) => (
                         <li key={i} className="flex items-center">
                           <motion.div
-                            className="h-2 w-2 rounded-full bg-purple-500 mr-2"
+                            className="h-2 w-2 rounded-full bg-[#8e1616] mr-2"
                             animate={{ scale: [1, 1.2, 1] }}
                             transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, delay: i * 0.2 }}
                           />
