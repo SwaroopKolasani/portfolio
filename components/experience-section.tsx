@@ -15,15 +15,14 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    title: "Data Engineer",
+    title: "Machine Learning Engineer",
     company: "Trigent",
     location: "Bangalore, IN",
     period: "Dec 2021 - June 2023",
     description: [
-      "Architected and deployed 15+ scalable ETL pipelines using AWS Glue and Apache Airflow, processing 3TB+ of data daily while reducing processing time by 40% and maintaining 99.9% reliability.",
-      "Designed and implemented a Snowflake data warehouse with optimized schema patterns, enabling analytics teams to reduce query execution time by 70% and supporting dashboard solutions for 150% business users.",
-      "Engineered real-time data streaming architecture using AWS Kinesis and Lambda, delivering instant insights across 8 critical business applications while processing 80K+ events per minute with sub-second latency.",
-      "Automated data quality validation framework with Python and SQL, reducing data defects by 85% and implementing comprehensive data governance strategies that ensured 100% regulatory compliance.",
+      "Architected and deployed 15+ scalable data pipelines using AWS Glue and Apache Airflow for ML model training and inference workflows, processing 3TB+ of feature data daily while reducing model training time by 40% and maintaining 99.9% pipeline reliability for production ML systems.",
+      "Designed and implemented a Snowflake data warehouse optimized for ML analytics and model development, enabling data science teams to reduce feature engineering query time by 70%.",
+      "Engineered real-time data streaming architecture using AWS Kinesis and Lambda for ML model inference and monitoring, delivering instant predictions across critical business applications.",
     ],
   },
   {
@@ -33,7 +32,7 @@ const experiences: ExperienceItem[] = [
     period: "July 2024 - May 2025",
     description: [
       "Resolved Student Issues: Successfully addressed GRE exam requirements, course leveling, and security concerns for 150+ international students.",
-      'Organized Key Events: Led cultural and advocacy events, including Diwali celebrations and "Pizza with a Dean," providing students a platform to voice concerns.',
+      "Organized Key Events: Led cultural and advocacy events, including Diwali celebrations and Pizza with a Dean, providing students a platform to voice concerns.",
       "Advocated at CHESS 2025: Represented international students at California Higher Education Student Summit 2025, collaborating with student leaders to drive impactful initiatives.",
     ],
   },

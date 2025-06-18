@@ -33,12 +33,6 @@
   }
   body {
     @apply bg-black text-white;
-    cursor: none;
-  }
-  a,
-  button,
-  [role="button"] {
-    cursor: none;
   }
 }
 

@@ -9,6 +9,7 @@ import { ProjectsSection } from "@/components/projects-section"
 import { SkillsSection } from "@/components/skills-section"
 import { EducationSection } from "@/components/education-section"
 import { CertificationsSection } from "@/components/certifications-section"
+import { ResearchPublicationsSection } from "@/components/research-publications-section"
 import { GallerySection } from "@/components/gallery-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
@@ -16,16 +17,14 @@ import { ScrollToTop } from "@/components/scroll-to-top"
 import { AnimatedBackground } from "@/components/animated-background"
 import { QuoteSection } from "@/components/quote-section"
 import { LoadingAnimation } from "@/components/loading-animation"
-import { SnowflakeCursor } from "@/components/snowflake-cursor"
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
-    // Set loaded after animation completes
     const timer = setTimeout(() => {
       setIsLoaded(true)
-    }, 10500) // slightly longer than the animation duration
+    }, 7500)
 
     return () => clearTimeout(timer)
   }, [])
@@ -33,7 +32,6 @@ export default function Home() {
   return (
     <>
       <LoadingAnimation />
-      <SnowflakeCursor color="#8e1616" />
       {isLoaded && (
         <main className="min-h-screen">
           <AnimatedBackground />
@@ -46,6 +44,7 @@ export default function Home() {
           <SkillsSection />
           <EducationSection />
           <CertificationsSection />
+          <ResearchPublicationsSection />
           <GallerySection />
           <ContactSection />
           <Footer />
