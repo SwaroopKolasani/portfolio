@@ -39,6 +39,7 @@ const researchPublications: ResearchItem[] = [
       "Cognitive Modeling",
     ],
     timeline: "2025 - Present",
+    
   },
 ]
 

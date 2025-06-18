@@ -32,7 +32,7 @@ const experiences: ExperienceItem[] = [
     period: "July 2024 - May 2025",
     description: [
       "Resolved Student Issues: Successfully addressed GRE exam requirements, course leveling, and security concerns for 150+ international students.",
-      "Organized Key Events: Led cultural and advocacy events, including Diwali celebrations and Pizza with a Dean, providing students a platform to voice concerns.",
+      'Organized Key Events: Led cultural and advocacy events, including Diwali celebrations and "Pizza with a Dean," providing students a platform to voice concerns.',
       "Advocated at CHESS 2025: Represented international students at California Higher Education Student Summit 2025, collaborating with student leaders to drive impactful initiatives.",
     ],
   },

@@ -22,9 +22,10 @@ export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
+    // Set loaded after animation completes - reduced to 7.5 seconds
     const timer = setTimeout(() => {
       setIsLoaded(true)
-    }, 7500)
+    }, 7500) // slightly longer than the animation duration
 
     return () => clearTimeout(timer)
   }, [])
