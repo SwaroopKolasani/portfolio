@@ -20,30 +20,6 @@ interface ProjectItem {
 
 const projects: ProjectItem[] = [
   {
-    title: "Real-Time Market Data Microservice",
-    description:
-      "A scalable microservices-based system for real-time stock market data ingestion, processing, and analytics with robust message streaming and caching capabilities.",
-    technologies: [
-      "Python",
-      "FastAPI",
-      "Apache Kafka",
-      "PostgreSQL",
-      "Redis",
-      "Docker",
-      "Docker Compose",
-      "Finnhub API",
-    ],
-    highlights: [
-      "Engineered a scalable microservices architecture using FastAPI for the main service layer, handling client requests and routing data with 99.9% uptime and sub-100ms response times.",
-      "Implemented robust message streaming between services using Apache Kafka with Producer-Consumer model, processing over 10,000 real-time stock market events per minute with zero data loss.",
-      "Designed PostgreSQL database schema for both raw and processed financial data with optimized moving average calculations, reducing query execution time by 60% through proper indexing and partitioning.",
-      "Integrated Redis as a high-speed cache for frequently accessed API results, achieving 85% cache hit rate and reducing database load by 70% while improving API response times by 45%.",
-      "Orchestrated the entire service stack using Docker Compose for seamless local deployment, enabling one-command setup and teardown of the complete microservices ecosystem.",
-    ],
-    github: "https://github.com/SwaroopKolasani",
-    demo: "https://demo.com",
-  },
-  {
     title: "TRAIL-MAN",
     description:
       "Autonomous job application system that streamlines resume creation, job searching, and application processes using AI-driven workflows.",
@@ -105,7 +81,7 @@ export function ProjectsSection() {
         </AnimatedSection>
 
         <div className="mt-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <AnimatedSection key={index} delay={index * 0.1}>
                 <motion.div
@@ -133,27 +109,24 @@ export function ProjectsSection() {
                           <div className="bg-[#8e1616]/20 p-3 rounded-full mr-4">
                             <CodeIcon className="h-6 w-6 text-[#8e1616]" />
                           </div>
-                          <h3 className="text-xl font-bold text-white">{project.title}</h3>
+                          <h3 className="text-2xl font-bold text-white">{project.title}</h3>
                         </div>
 
-                        <p className="text-gray-300 mb-4 text-sm">{project.description}</p>
+                        <p className="text-gray-300 mb-4">{project.description}</p>
 
                         <div className="flex flex-wrap gap-2 mb-4">
-                          {project.technologies.slice(0, 4).map((tech, i) => (
+                          {project.technologies.slice(0, 5).map((tech, i) => (
                             <Badge
                               key={i}
                               variant="secondary"
-                              className="bg-[#8e1616]/20 text-white hover:bg-[#8e1616]/30 text-xs"
+                              className="bg-[#8e1616]/20 text-white hover:bg-[#8e1616]/30"
                             >
                               {tech}
                             </Badge>
                           ))}
-                          {project.technologies.length > 4 && (
-                            <Badge
-                              variant="secondary"
-                              className="bg-[#8e1616]/20 text-white hover:bg-[#8e1616]/30 text-xs"
-                            >
-                              +{project.technologies.length - 4} more
+                          {project.technologies.length > 5 && (
+                            <Badge variant="secondary" className="bg-[#8e1616]/20 text-white hover:bg-[#8e1616]/30">
+                              +{project.technologies.length - 5} more
                             </Badge>
                           )}
                         </div>

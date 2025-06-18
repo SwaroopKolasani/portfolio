@@ -21,7 +21,7 @@ const certifications: CertificationItem[] = [
   {
     title: "AWS Associate Solution Architect",
     issuer: "Amazon Web Services",
-    date: "Feb 2025",
+    date: "June 2023",
     description:
       "Validated expertise in designing distributed systems on AWS, demonstrating knowledge of AWS services, security best practices, and cost optimization strategies.",
     skills: ["AWS", "Cloud Architecture", "Security", "Networking", "Cost Optimization"],
@@ -30,7 +30,7 @@ const certifications: CertificationItem[] = [
   {
     title: "AWS Associate Machine Learning Engineer",
     issuer: "Amazon Web Services",
-    date: "may 2025",
+    date: "August 2023",
     description:
       "Certified in designing, implementing, and maintaining machine learning solutions on AWS, showcasing proficiency in data engineering, exploratory data analysis, and ML modeling.",
     skills: ["Machine Learning", "AWS SageMaker", "Data Engineering", "Model Deployment", "MLOps"],
@@ -39,7 +39,7 @@ const certifications: CertificationItem[] = [
   {
     title: "Microsoft Power-BI",
     issuer: "Microsoft",
-    date: "January 2025",
+    date: "January 2023",
     description:
       "Demonstrated proficiency in creating and sharing interactive data visualizations, dashboards, and business intelligence solutions using Microsoft Power BI.",
     skills: ["Data Visualization", "Business Intelligence", "DAX", "Data Modeling", "Report Design"],
@@ -48,7 +48,7 @@ const certifications: CertificationItem[] = [
   {
     title: "TensorFlow Developer Certificate",
     issuer: "Google",
-    date: "March 2025",
+    date: "March 2023",
     description:
       "Validated skills in building and training neural networks using TensorFlow, including computer vision, NLP, and time series forecasting applications.",
     skills: ["TensorFlow", "Deep Learning", "Neural Networks", "Computer Vision", "NLP"],

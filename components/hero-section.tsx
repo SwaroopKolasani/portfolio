@@ -40,7 +40,7 @@ export function HeroSection() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.5 }}
             >
-              Aspiring Machine Learning Engineer
+              Aspiring ML Engineer & Data Engineer
             </motion.h2>
 
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.5 }}>
