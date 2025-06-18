@@ -58,7 +58,7 @@ export function EducationSection() {
                     <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-2 md:mt-0">
                       <div className="flex items-center text-gray-400">
                         <CalendarIcon className="h-4 w-4 mr-1" />
-                        <span className="text-sm">May 2025</span>
+                        <span className="text-sm">Dec 2025</span>
                       </div>
                       <div className="flex items-center text-gray-400">
                         <MapPinIcon className="h-4 w-4 mr-1" />

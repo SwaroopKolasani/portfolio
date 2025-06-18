@@ -21,10 +21,10 @@ export function LoadingAnimation() {
   ]
 
   useEffect(() => {
-    // Simulate loading time - increased to 10 seconds
+    // Simulate loading time - reduced to 7 seconds
     const timer = setTimeout(() => {
       setIsLoading(false)
-    }, 10000)
+    }, 7000)
 
     return () => clearTimeout(timer)
   }, [])
